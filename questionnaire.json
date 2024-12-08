@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "text": "How often should you brush your dentures?",
+            "options": [
+                "After every meal",
+                "Once a week",
+                "Daily"
+            ]
+        },
+        {
+            "text": "What should you avoid using on your dentures?",
+            "options": [
+                "Non-abrasive toothpaste",
+                "Regular toothpaste",
+                "Denture brush"
+            ]
+        },
+        {
+            "text": "What should you do if your dentures become damaged?",
+            "options": [
+                "Ignore it",
+                "Attempt to fix it yourself",
+                "Contact your dentist"
+            ]
+        },
+        {
+            "text": "Why should you avoid using hot water to soak your dentures?",
+            "options": [
+                "It can make them too soft",
+                "It can warp the dentures",
+                "Hot water is safe for soaking"
+            ]
+        },
+        {
+            "text": "How should you handle your dentures to prevent damage?",
+            "options": [
+                "Handle them over a soft surface or sink filled with water",
+                "Hold them tightly to prevent slipping",
+                "Place them directly on the countertop"
+            ]
+        },
+        {
+            "text": "What should you do before inserting your dentures?",
+            "options": [
+                "Clean your mouth by brushing your gums, tongue, and any remaining natural teeth",
+                "Apply denture adhesive",
+                "Rinse dentures with cold water"
+            ]
+        },
+        {
+            "text": "How should you store your dentures when not in use?",
+            "options": [
+                "In a dry container",
+                "In a soaking solution or water",
+                "In the refrigerator"
+            ]
+        },
+        {
+            "text": "Why is it important to visit your dentist regularly when using dentures?",
+            "options": [
+                "To adjust the fit of your dentures and check oral health",
+                "To receive new dentures every visit",
+                "Regular visits are not necessary"
+            ]
+        },
+        {
+            "text": "What type of foods should you start with when adapting to dentures?",
+            "options": [
+                "Hard foods",
+                "Soft foods",
+                "No specific type; eat anything"
+            ]
+        },
+        {
+            "text": "How should you use denture adhesives for best results?",
+            "options": [
+                "Use them frequently without instructions",
+                "Use them sparingly as directed by your dentist",
+                "Do not use denture adhesives"
+            ]
+        }
+    ]
+}
