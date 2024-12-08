@@ -18,12 +18,12 @@
         },
         colors: {
           primary: {
-            DEFAULT: '#2563eb', // Custom primary color (soft blue)
+            DEFAULT: '#2563eb',
             light: '#3b82f6',
             dark: '#1d4ed8',
           },
           accent: {
-            DEFAULT: '#10b981', // Soft green for accents (buttons)
+            DEFAULT: '#10b981',
             hover: '#059669',
           }
         }
@@ -41,7 +41,6 @@
     margin-bottom: 0.75rem;
   }
 
-  /* markdown-content styles */
   .markdown-content {
     margin-top: 1.5rem;
     line-height: 1.75;
@@ -50,7 +49,6 @@
     font-family: 'Roboto', sans-serif;
   }
 
-  /* Headings inside markdown-content */
   .markdown-content h1,
   .markdown-content h2,
   .markdown-content h3,
@@ -71,12 +69,10 @@
   .markdown-content h5 { font-size: 1.1rem; }
   .markdown-content h6 { font-size: 1rem; font-weight: 600; }
 
-  /* Paragraphs */
   .markdown-content p {
     margin-bottom: 1.25rem;
   }
 
-  /* Links inside markdown-content */
   .markdown-content a {
     color: #2563eb;
     text-decoration: underline;
@@ -88,7 +84,6 @@
     color: #1d4ed8;
   }
 
-  /* Emphasis and Strong */
   .markdown-content em {
     font-style: italic;
   }
@@ -97,13 +92,11 @@
     font-weight: 700;
   }
 
-  /* Strikethrough */
   .markdown-content del {
     text-decoration: line-through;
     color: #6b7280; 
   }
 
-  /* Lists */
   .markdown-content ul,
   .markdown-content ol {
     margin-bottom: 1.25rem;
@@ -114,12 +107,10 @@
     margin-bottom: 0.5rem;
   }
 
-  /* Bold list markers */
   .markdown-content li::marker {
     font-weight: bold;
   }
 
-  /* Horizontal Rules */
   .markdown-content hr {
     border: none;
     height: 4px;
@@ -128,7 +119,6 @@
     border-radius: 2px;
   }
 
-  /* Blockquotes */
   .markdown-content blockquote {
     border-left: 4px solid #9ca3af;
     padding-left: 1rem;
@@ -137,7 +127,6 @@
     font-style: italic;
   }
 
-  /* Code and Preformatted Text */
   .markdown-content pre {
     background: #f5f5f5;
     padding: 1rem;
@@ -158,7 +147,6 @@
     color: #1f2937;
   }
 
-  /* Tables */
   .markdown-content table {
     width: 100%;
     border-collapse: collapse;
@@ -183,7 +171,6 @@
     vertical-align: top;
   }
 
-  /* Images */
   .markdown-content img {
     max-width: 100%;
     height: auto;
@@ -191,19 +178,16 @@
     border-radius: 4px;
   }
 
-  /* Footnotes (if used) */
   .markdown-content sup {
     font-size: 0.8em;
     vertical-align: super;
   }
 
-  /* Abbreviations (if using Markdown extension) */
   .markdown-content abbr[title] {
     border-bottom: 1px dotted #6b7280;
     cursor: help;
   }
 
-  /* Accessibility and focus */
   .sr-only:focus {
     position: absolute;
     top: 0.5rem;
@@ -225,7 +209,6 @@
     outline-offset: 4px;
   }
 
-  /* Custom styled horizontal line for main sections (not from Markdown) */
   .styled-hr {
     border: none;
     height: 4px;
@@ -234,7 +217,6 @@
     margin: 1.5rem 0;
   }
 
-  /* TOC styling */
   #tocContainer h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
@@ -253,7 +235,6 @@
     position: relative;
   }
 
-  /* Indent nested lists and add a subtle line/border for hierarchy */
   #tocContainer ul ul {
     margin-left: 1rem;
     padding-left: 0.75rem;
@@ -262,7 +243,6 @@
     margin-bottom: 0.5rem;
   }
 
-  /* Add a small icon before each link for a nicer look */
   #tocContainer li > a::before {
     content: '•';
     color: #2563eb;
@@ -417,7 +397,6 @@
     const tocContainer = document.getElementById('tocContainer');
     const tocContent = document.getElementById('tocContent');
 
-    // Show TOC container now that we have headings
     tocContainer.classList.remove('hidden');
 
     let currentLevel = 1;
@@ -427,7 +406,6 @@
     headings.forEach(heading => {
       const level = parseInt(heading.tagName.replace('H', ''), 10);
 
-      // Ensure the heading has an ID. If not, create one from text.
       if (!heading.id) {
         heading.id = heading.textContent.toLowerCase().replace(/[^\w]+/g, '-');
       }
@@ -439,16 +417,13 @@
       
       listItem.appendChild(link);
 
-      // Adjust the list nesting based on heading level
       if (level > currentLevel) {
-        // Create nested list(s) as needed
         for (let i = currentLevel; i < level; i++) {
           const newList = document.createElement('ul');
           currentList.lastElementChild.appendChild(newList);
           currentList = newList;
         }
       } else if (level < currentLevel) {
-        // Close lists as needed
         for (let i = currentLevel; i > level; i--) {
           currentList = currentList.parentElement.closest('ul');
         }
@@ -467,7 +442,6 @@
       loadMarkdown('maintenance.md', 'maintenanceContent')
     ])
     .then(() => {
-      // After all markdown content is loaded, generate the TOC
       generateTOC();
     })
     .catch(error => console.error('Error loading Markdown files:', error));
@@ -479,8 +453,14 @@
       })
       .then(data => {
         quizData = data;
+        // Shuffle the questions array
+        const shuffledQuestions = data.questions.sort(() => 0.5 - Math.random());
+
+        // Select how many questions you want to display, for example 10
+        const selectedQuestions = shuffledQuestions.slice(0, 10);
+
         const form = document.getElementById('quizForm');
-        data.questions.forEach((question, index) => {
+        selectedQuestions.forEach((question, index) => {
           const questionHtml = `
 <div class="mb-6">
   <p class="text-lg text-gray-800 mb-4">${index + 1}. ${question.text}</p>
@@ -495,6 +475,9 @@
 </div>`;
           form.insertAdjacentHTML('beforeend', questionHtml);
         });
+
+        // Update quizData.questions so scoring matches the displayed subset
+        quizData.questions = selectedQuestions;
       })
       .catch(error => console.error('Error loading questionnaire.json:', error));
   });

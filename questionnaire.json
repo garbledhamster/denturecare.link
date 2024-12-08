@@ -1,84 +1,482 @@
 {
     "questions": [
-        {
-            "text": "How often should you brush your dentures?",
-            "options": [
-                "After every meal",
-                "Once a week",
-                "Daily"
-            ]
-        },
-        {
-            "text": "What should you avoid using on your dentures?",
-            "options": [
-                "Non-abrasive toothpaste",
-                "Regular toothpaste",
-                "Denture brush"
-            ]
-        },
-        {
-            "text": "What should you do if your dentures become damaged?",
-            "options": [
-                "Ignore it",
-                "Attempt to fix it yourself",
-                "Contact your dentist"
-            ]
-        },
-        {
-            "text": "Why should you avoid using hot water to soak your dentures?",
-            "options": [
-                "It can make them too soft",
-                "It can warp the dentures",
-                "Hot water is safe for soaking"
-            ]
-        },
-        {
-            "text": "How should you handle your dentures to prevent damage?",
-            "options": [
-                "Handle them over a soft surface or sink filled with water",
-                "Hold them tightly to prevent slipping",
-                "Place them directly on the countertop"
-            ]
-        },
-        {
-            "text": "What should you do before inserting your dentures?",
-            "options": [
-                "Clean your mouth by brushing your gums, tongue, and any remaining natural teeth",
-                "Apply denture adhesive",
-                "Rinse dentures with cold water"
-            ]
-        },
-        {
-            "text": "How should you store your dentures when not in use?",
-            "options": [
-                "In a dry container",
-                "In a soaking solution or water",
-                "In the refrigerator"
-            ]
-        },
-        {
-            "text": "Why is it important to visit your dentist regularly when using dentures?",
-            "options": [
-                "To adjust the fit of your dentures and check oral health",
-                "To receive new dentures every visit",
-                "Regular visits are not necessary"
-            ]
-        },
-        {
-            "text": "What type of foods should you start with when adapting to dentures?",
-            "options": [
-                "Hard foods",
-                "Soft foods",
-                "No specific type; eat anything"
-            ]
-        },
-        {
-            "text": "How should you use denture adhesives for best results?",
-            "options": [
-                "Use them frequently without instructions",
-                "Use them sparingly as directed by your dentist",
-                "Do not use denture adhesives"
-            ]
-        }
+      {
+        "text": "How often should you brush your dentures?",
+        "options": [
+          "After every meal",
+          "Once a week",
+          "Daily"
+        ],
+        "correct": "Daily"
+      },
+      {
+        "text": "What should you avoid using on your dentures?",
+        "options": [
+          "Non-abrasive toothpaste",
+          "Regular toothpaste",
+          "Denture brush"
+        ],
+        "correct": "Regular toothpaste"
+      },
+      {
+        "text": "What should you do if your dentures become damaged?",
+        "options": [
+          "Ignore it",
+          "Attempt to fix it yourself",
+          "Contact your dentist"
+        ],
+        "correct": "Contact your dentist"
+      },
+      {
+        "text": "Why should you avoid using hot water to soak your dentures?",
+        "options": [
+          "It can make them too soft",
+          "It can warp the dentures",
+          "Hot water is safe for soaking"
+        ],
+        "correct": "It can warp the dentures"
+      },
+      {
+        "text": "How should you handle your dentures to prevent damage?",
+        "options": [
+          "Handle them over a soft surface or sink filled with water",
+          "Hold them tightly to prevent slipping",
+          "Place them directly on the countertop"
+        ],
+        "correct": "Handle them over a soft surface or sink filled with water"
+      },
+      {
+        "text": "What should you do before inserting your dentures?",
+        "options": [
+          "Clean your mouth by brushing your gums, tongue, and any remaining natural teeth",
+          "Apply denture adhesive",
+          "Rinse dentures with cold water"
+        ],
+        "correct": "Clean your mouth by brushing your gums, tongue, and any remaining natural teeth"
+      },
+      {
+        "text": "How should you store your dentures when not in use?",
+        "options": [
+          "In a dry container",
+          "In a soaking solution or water",
+          "In the refrigerator"
+        ],
+        "correct": "In a soaking solution or water"
+      },
+      {
+        "text": "Why is it important to visit your dentist regularly when using dentures?",
+        "options": [
+          "To adjust the fit of your dentures and check oral health",
+          "To receive new dentures every visit",
+          "Regular visits are not necessary"
+        ],
+        "correct": "To adjust the fit of your dentures and check oral health"
+      },
+      {
+        "text": "What type of foods should you start with when adapting to dentures?",
+        "options": [
+          "Hard foods",
+          "Soft foods",
+          "No specific type; eat anything"
+        ],
+        "correct": "Soft foods"
+      },
+      {
+        "text": "How should you use denture adhesives for best results?",
+        "options": [
+          "Use them frequently without instructions",
+          "Use them sparingly as directed by your dentist",
+          "Do not use denture adhesives"
+        ],
+        "correct": "Use them sparingly as directed by your dentist"
+      },
+      {
+        "text": "Which ancient civilization used animal teeth and human hair to create early denture-like devices?",
+        "options": [
+          "The Greeks",
+          "The Etruscans",
+          "The Egyptians"
+        ],
+        "correct": "The Etruscans"
+      },
+      {
+        "text": "What material revolutionized 19th-century denture production by making them more affordable and custom-fitted?",
+        "options": [
+          "Ivory",
+          "Porcelain",
+          "Vulcanite rubber"
+        ],
+        "correct": "Vulcanite rubber"
+      },
+      {
+        "text": "What is Polymethyl Methacrylate (PMMA) commonly used for in modern dentures?",
+        "options": [
+          "Frameworks for implant-supported dentures",
+          "Denture bases",
+          "Temporary adhesives"
+        ],
+        "correct": "Denture bases"
+      },
+      {
+        "text": "What technology allows for highly personalized denture solutions through rapid prototyping?",
+        "options": [
+          "Alginate impressions",
+          "3D printing",
+          "Thermoplastic molding"
+        ],
+        "correct": "3D printing"
+      },
+      {
+        "text": "Which process involves dental implants that integrate directly with the jawbone to support dentures?",
+        "options": [
+          "Vulcanization",
+          "Bone grafting",
+          "Osseointegration"
+        ],
+        "correct": "Osseointegration"
+      },
+      {
+        "text": "Why is it recommended to remove your dentures at night?",
+        "options": [
+          "To prevent them from shrinking",
+          "To give your gums a rest and reduce risk of infections",
+          "To soak them in boiling water"
+        ],
+        "correct": "To give your gums a rest and reduce risk of infections"
+      },
+      {
+        "text": "What is a key benefit of visiting a dentist regularly if you are a denture wearer?",
+        "options": [
+          "Receiving free denture cleaners",
+          "Ensuring proper fit and monitoring oral health",
+          "Reducing the cost of your next denture set"
+        ],
+        "correct": "Ensuring proper fit and monitoring oral health"
+      },
+      {
+        "text": "When first adjusting to dentures, what can help improve speech clarity?",
+        "options": [
+          "Avoiding talking",
+          "Reading aloud or practicing speech exercises",
+          "Chewing gum while speaking"
+        ],
+        "correct": "Reading aloud or practicing speech exercises"
+      },
+      {
+        "text": "What type of cleaner should generally be avoided to prevent denture damage?",
+        "options": [
+          "Denture-specific cleaning tablets",
+          "Mild soap",
+          "Abrasive household cleaners like bleach"
+        ],
+        "correct": "Abrasive household cleaners like bleach"
+      },
+      {
+        "text": "What is a common sign that your dentures may need adjustment or replacement?",
+        "options": [
+          "A perfectly stable fit",
+          "Persistent soreness or difficulty chewing",
+          "A bright, shiny appearance"
+        ],
+        "correct": "Persistent soreness or difficulty chewing"
+      },
+      {
+        "text": "Which myth about dentures is FALSE according to the text?",
+        "options": [
+          "Dentures look unnatural",
+          "All dentures are the same",
+          "Modern dentures can be lifelike and varied"
+        ],
+        "correct": "Dentures look unnatural"
+      },
+      {
+        "text": "How often should you schedule check-ups with your dentist after getting dentures?",
+        "options": [
+          "Only when dentures break",
+          "Regularly, as advised by your dentist",
+          "Never, unless you experience pain"
+        ],
+        "correct": "Regularly, as advised by your dentist"
+      },
+      {
+        "text": "What is a recommended method for preventing oral infections when wearing dentures?",
+        "options": [
+          "Ignoring minor soreness",
+          "Maintaining proper oral hygiene and cleaning dentures daily",
+          "Only rinsing dentures in water occasionally"
+        ],
+        "correct": "Maintaining proper oral hygiene and cleaning dentures daily"
+      },
+      {
+        "text": "Which material introduced in the 20th century provided a lightweight and aesthetic option for denture bases?",
+        "options": [
+          "Stainless steel",
+          "PMMA (acrylic resin)",
+          "Wood"
+        ],
+        "correct": "PMMA (acrylic resin)"
+      },
+      {
+        "text": "What is one reason soft foods are recommended for new denture wearers?",
+        "options": [
+          "They strengthen the dentures",
+          "They help the wearer adjust to chewing with dentures",
+          "They eliminate the need for regular cleaning"
+        ],
+        "correct": "They help the wearer adjust to chewing with dentures"
+      },
+      {
+        "text": "What should you do if you notice tartar buildup on your dentures?",
+        "options": [
+          "Use a recommended denture cleaner to remove it",
+          "Use bleach to whiten them",
+          "Ignore the buildup"
+        ],
+        "correct": "Use a recommended denture cleaner to remove it"
+      },
+      {
+        "text": "Which advanced technique allows precise fitting of dentures by using digital design and manufacturing?",
+        "options": [
+          "Hand carving",
+          "CAD/CAM technology",
+          "Metal casting"
+        ],
+        "correct": "CAD/CAM technology"
+      },
+      {
+        "text": "Why is placing dentures in boiling water not advisable?",
+        "options": [
+          "It cleans them more thoroughly",
+          "It can permanently deform them",
+          "It sharpens the denture teeth"
+        ],
+        "correct": "It can permanently deform them"
+      },
+      {
+        "text": "What is a good practice before reinserting dentures after cleaning?",
+        "options": [
+          "Leaving them dry to save time",
+          "Brushing your gums, tongue, and any natural teeth",
+          "Using a hard-bristled brush on the dentures"
+        ],
+        "correct": "Brushing your gums, tongue, and any natural teeth"
+      },
+      {
+        "text": "Which is a future trend mentioned in denture technology?",
+        "options": [
+          "Regenerative dentistry using stem cell therapies",
+          "Wooden dentures with metal springs",
+          "No technological advancements expected"
+        ],
+        "correct": "Regenerative dentistry using stem cell therapies"
+      },
+      {
+        "text": "What is the main advantage of implant-supported dentures?",
+        "options": [
+          "They never require cleaning",
+          "They offer enhanced stability and retention",
+          "They are made of disposable materials"
+        ],
+        "correct": "They offer enhanced stability and retention"
+      },
+      {
+        "text": "What should you avoid doing if your dentures feel loose?",
+        "options": [
+          "Continue wearing them without consulting a dentist",
+          "Schedule a dental appointment to adjust the fit",
+          "Try bending the denture base yourself"
+        ],
+        "correct": "Schedule a dental appointment to adjust the fit"
+      },
+      {
+        "text": "Which cleaning practice can help remove stubborn stains from dentures?",
+        "options": [
+          "Soaking them overnight in a denture-cleaning solution",
+          "Rinsing them with plain water only",
+          "Scrubbing with a hard-bristled toothbrush"
+        ],
+        "correct": "Soaking them overnight in a denture-cleaning solution"
+      },
+      {
+        "text": "What role does saliva play for denture wearers?",
+        "options": [
+          "It breaks down denture materials",
+          "It helps keep oral tissues lubricated and can aid in denture stability",
+          "It makes the dentures slip out more easily"
+        ],
+        "correct": "It helps keep oral tissues lubricated and can aid in denture stability"
+      },
+      {
+        "text": "When selecting denture-cleaning products, what should you consider?",
+        "options": [
+          "Products recommended by a dentist",
+          "Random household cleaners",
+          "Abrasive powders"
+        ],
+        "correct": "Products recommended by a dentist"
+      },
+      {
+        "text": "Why might your dentures no longer fit even if they are not physically damaged?",
+        "options": [
+          "Changes in jawbone and gum structure over time",
+          "The dentures melted overnight",
+          "Denture material naturally expands in cold weather"
+        ],
+        "correct": "Changes in jawbone and gum structure over time"
+      },
+      {
+        "text": "What is a benefit of partial dentures compared to full dentures?",
+        "options": [
+          "They never need cleaning",
+          "They replace only the missing teeth, preserving natural teeth",
+          "They are permanently fixed and never removed"
+        ],
+        "correct": "They replace only the missing teeth, preserving natural teeth"
+      },
+      {
+        "text": "Which of the following might indicate poor oral hygiene under dentures?",
+        "options": [
+          "A pleasant, neutral odor",
+          "Red, irritated gum tissue and bad breath",
+          "Dentures that remain clean"
+        ],
+        "correct": "Red, irritated gum tissue and bad breath"
+      },
+      {
+        "text": "What is the purpose of a denture reline?",
+        "options": [
+          "To completely remake the denture from scratch",
+          "To adjust the inner surface to improve fit and comfort",
+          "To change the denture’s color"
+        ],
+        "correct": "To adjust the inner surface to improve fit and comfort"
+      },
+      {
+        "text": "How can implant-supported dentures help address bone loss issues?",
+        "options": [
+          "They do not help with bone loss at all",
+          "They provide a stable anchor, potentially slowing bone resorption",
+          "They remove the need for healthy gum tissue"
+        ],
+        "correct": "They provide a stable anchor, potentially slowing bone resorption"
+      },
+      {
+        "text": "What is a key factor in determining how frequently dentures need replacement?",
+        "options": [
+          "Changing fashion trends",
+          "Wear and tear, along with changes in mouth structure",
+          "The patient’s age"
+        ],
+        "correct": "Wear and tear, along with changes in mouth structure"
+      },
+      {
+        "text": "Which statement about immediate dentures is correct?",
+        "options": [
+          "They are placed right after tooth extraction",
+          "They never need adjustments",
+          "They are made from metal only"
+        ],
+        "correct": "They are placed right after tooth extraction"
+      },
+      {
+        "text": "Why should you avoid skipping regular denture cleanings?",
+        "options": [
+          "To save time",
+          "To prevent bacterial buildup, odors, and oral infections",
+          "Because dentures clean themselves naturally"
+        ],
+        "correct": "To prevent bacterial buildup, odors, and oral infections"
+      },
+      {
+        "text": "What can cause dentures to appear stained over time?",
+        "options": [
+          "Drinking coffee, tea, or wine without proper cleaning",
+          "Always soaking them in water",
+          "Storing them in a closed container"
+        ],
+        "correct": "Drinking coffee, tea, or wine without proper cleaning"
+      },
+      {
+        "text": "Which factor can help improve a denture wearer’s comfort when speaking?",
+        "options": [
+          "Leaving dentures out when talking",
+          "Practice, patience, and possibly using denture adhesives",
+          "Only speaking quietly"
+        ],
+        "correct": "Practice, patience, and possibly using denture adhesives"
+      },
+      {
+        "text": "What should a denture wearer do if they experience persistent mouth sores?",
+        "options": [
+          "Ignore them and hope they heal on their own",
+          "Visit a dentist for an adjustment or check-up",
+          "Use any random oral gel"
+        ],
+        "correct": "Visit a dentist for an adjustment or check-up"
+      },
+      {
+        "text": "How can balanced diets benefit denture wearers?",
+        "options": [
+          "They reduce the need for cleaning",
+          "They ensure proper nutrition and may promote oral tissue health",
+          "They make dentures permanently fit better"
+        ],
+        "correct": "They ensure proper nutrition and may promote oral tissue health"
+      },
+      {
+        "text": "What is one advantage of using denture-specific brushes instead of regular toothbrushes?",
+        "options": [
+          "Denture-specific brushes have softer bristles designed for denture materials",
+          "They are more abrasive and remove more material",
+          "They automatically apply denture adhesive"
+        ],
+        "correct": "Denture-specific brushes have softer bristles designed for denture materials"
+      },
+      {
+        "text": "Why might a dentist recommend implant-supported dentures over traditional dentures?",
+        "options": [
+          "Because implant-supported dentures can provide a more secure fit and reduce slipping",
+          "Because they are cheaper than traditional dentures",
+          "Because they never need cleaning"
+        ],
+        "correct": "Because implant-supported dentures can provide a more secure fit and reduce slipping"
+      },
+      {
+        "text": "What is a potential benefit of using a denture adhesive as directed?",
+        "options": [
+          "It permanently fixes dentures to gums",
+          "It can improve stability and comfort temporarily",
+          "It replaces the need for dentist visits"
+        ],
+        "correct": "It can improve stability and comfort temporarily"
+      },
+      {
+        "text": "When cleaning dentures, why is it advised to fill the sink with water or place a towel beneath?",
+        "options": [
+          "To remove all bacteria automatically",
+          "To provide a cushion and prevent breakage if dentures are dropped",
+          "To make the dentures float"
+        ],
+        "correct": "To provide a cushion and prevent breakage if dentures are dropped"
+      },
+      {
+        "text": "How can practicing speaking with dentures help a new wearer?",
+        "options": [
+          "It makes the dentures larger",
+          "It improves muscle memory and pronunciation, helping normalize speech",
+          "It eliminates the need for further adjustments"
+        ],
+        "correct": "It improves muscle memory and pronunciation, helping normalize speech"
+      },
+      {
+        "text": "What is a common reason dentures may feel less secure over time?",
+        "options": [
+          "Gum and bone changes altering the denture’s fit",
+          "The dentures becoming smarter over time",
+          "The dentures shrinking due to old age"
+        ],
+        "correct": "Gum and bone changes altering the denture’s fit"
+      }
     ]
-}
+  }
+  
