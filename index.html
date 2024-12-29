@@ -454,17 +454,17 @@
 
   document.addEventListener('DOMContentLoaded', function() {
     Promise.all([
-      loadMarkdown('history.md', 'historyContent'),
-      loadMarkdown('about.md', 'aboutContent'),
-      loadMarkdown('faqs.md', 'faqsContent'),
-      loadMarkdown('maintenance.md', 'maintenanceContent')
+      loadMarkdown('data/history.md', 'historyContent'),
+      loadMarkdown('data/about.md', 'aboutContent'),
+      loadMarkdown('data/faqs.md', 'faqsContent'),
+      loadMarkdown('data/maintenance.md', 'maintenanceContent')
     ])
     .then(() => {
       generateTOC();
     })
     .catch(error => console.error('Error loading Markdown files:', error));
 
-    fetch('questionnaire.json')
+    fetch('data/questionnaire.json')
       .then(response => {
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         return response.json();
